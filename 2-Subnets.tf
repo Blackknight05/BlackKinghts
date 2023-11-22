@@ -42,7 +42,7 @@ resource "aws_subnet" "public-me-central-1c" {
   }
 }
 #these are for private
-resource "aws_subnet" "private-me-central-1" {
+resource "aws_subnet" "private-me-central-1a" {
   vpc_id            = aws_vpc.app1.id
   cidr_block        = "10.95.11.0/24"
   availability_zone = "me-central-1a"
