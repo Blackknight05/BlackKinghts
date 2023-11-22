@@ -70,11 +70,11 @@ resource "aws_route_table_association" "public-me-central-1a" {
 }
 
 resource "aws_route_table_association" "public-me-central-1b" {
-  subnet_id      = aws_subnet.public-me-central-1b.id
+  subnet_id      = aws_subnet.me-central-1b.id
   route_table_id = aws_route_table.public.id
 }
 
-resource "aws_route_table_association" "ublic-eu-west-2c" {
-  subnet_id      = aws_subnet.public-eu-west-2c.id
+resource "aws_route_table_association" "public-me-central-1c" {
+  subnet_id      = aws_subnet.public-eme-central-1c.id
   route_table_id = aws_route_table.public.id
 }
