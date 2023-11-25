@@ -1,11 +1,11 @@
 resource "aws_launch_template" "app1_LT" {
   name_prefix   = "app1_LT"
-  image_id      = "ami-0cf6f2b898ac0b337"  
-  instance_type = "t2.micro"
+  image_id      = "ami-06e0a55b4f54d3e19"  
+  instance_type = "t3.micro"
 
   key_name = "MyLinuxBox"
 
-  vpc_security_group_ids = [aws_security_group.app1_sg01_servers.id]
+  vpc_security_group_ids = [aws_security_group.app1-sg01-servers.id]
 
   user_data = base64encode(<<-EOF
     #!/bin/bash
@@ -37,8 +37,8 @@ resource "aws_launch_template" "app1_LT" {
     </head>
     <body>
     <div>
-    <h1>Black Kinghts</h1>
-    <h1>The Order of EU-West</h1>
+    <h1>The Black Knights</h1>
+    <h1>From the Desert of Deserts</h1>
     <p><b>Instance Name:</b> $(hostname -f) </p>
     <p><b>Instance Private Ip Address: </b> $local_ipv4</p>
     <p><b>Availability Zone: </b> $az</p>
