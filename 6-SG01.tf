@@ -1,5 +1,4 @@
-resource "aws_security_group" "app1_sg01_servers" {
-
+resource "aws_security_group" "app1-sg01-servers" {
   name        = "app1-sg01-servers"
   description = "app1-sg01-servers"
   vpc_id      = aws_vpc.app1.id
@@ -37,10 +36,10 @@ resource "aws_security_group" "app1_sg01_servers" {
   }
 
   tags = {
-    Name = "app1"
+    Name    = "app1-sg01-servers"
     Service = "application1"
-    Owner = "Chewbacca"
-    Planet = "Mustafar"
+    Owner   = "Luke"
+    Planet  = "Musafar"
   }
 
 }
@@ -70,10 +69,10 @@ resource "aws_security_group" "app1-sg02-LB01" {
   }
 
   tags = {
-    Name = "app1"
+    Name    = "app1-sg02-LB01"
     Service = "application1"
-    Owner = "Chewbacca"
-    Planet = "Mustafar"
+    Owner   = "Luke"
+    Planet  = "Musafar"
   }
 
 }
