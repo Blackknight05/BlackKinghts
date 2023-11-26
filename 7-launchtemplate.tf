@@ -37,8 +37,9 @@ resource "aws_launch_template" "app1_LT" {
     </head>
     <body>
     <div>
-    <h1>The Black Knights</h1>
-    <h1>From the Desert of Deserts</h1>
+    <iframe src="https://giphy.com/embed/J4WELQ9oj1NWIl0ucW" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a
+    </h1> The Black Knight:</h1>
+    <h1>Protectors of the Arabian desert</h1>
     <p><b>Instance Name:</b> $(hostname -f) </p>
     <p><b>Instance Private Ip Address: </b> $local_ipv4</p>
     <p><b>Availability Zone: </b> $az</p>
